@@ -351,7 +351,7 @@ li {
 }
 
 .smooth-zigzag-anim-1 {
-    animation: smooth-zigzag-1 5s linear infinite;
+    animation: smooth-zigzag-1 8s linear infinite;
 }
 
 @keyframes smooth-zigzag-1 {
@@ -363,7 +363,7 @@ li {
 }
 
 .smooth-zigzag-anim-2 {
-    animation: smooth-zigzag-2 5s linear infinite;
+    animation: smooth-zigzag-2 9s linear infinite;
 }
 
 @keyframes smooth-zigzag-2 {
@@ -375,7 +375,7 @@ li {
 }
 
 .smooth-zigzag-anim-3 {
-    animation: smooth-zigzag-3 5s linear infinite;
+    animation: smooth-zigzag-3 7s linear infinite;
 }
 
 @keyframes smooth-zigzag-3 {
