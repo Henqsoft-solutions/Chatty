@@ -10,7 +10,7 @@ Add your own favourite sticker, gifs and enve put then up for free or monitize i
 ## Gifs
 ## Stickers
 ## Audios
-## Vidoes
+## Videos
 ## Reels
 
 # Chatty.... Chatty ... Chatty, let's get chatty.
