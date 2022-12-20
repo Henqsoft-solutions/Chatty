@@ -40,6 +40,9 @@
 .text-cs-orange{
     color:var(--brand-color-orange);
 }
+.text-orange{
+    color:var(--brand-color-orange);
+}
 .text-cs-white{
     color:var(--brand-color-white);
 }
@@ -63,4 +66,13 @@
 .dropdown-item:hover{
     background:var(--brand-color-orange);
     color:white;
+}
+
+/* get started button styling */
+.get-started{
+    transition:.4s;
+}
+.get-started:hover{
+    background:var(--brand-color-orange);
+    color:var(--brand-color-white);
 }
