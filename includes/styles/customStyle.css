@@ -1,4 +1,65 @@
+
+/* define the styles for Chatty */
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/poppins.ttf);
+}
+
+/* font family for bold text */
+@font-face {
+    font-family: Poppins;
+    src: url(../../fonts/poppins_bold.ttf);
+    font-weight:bold;
+}
+
+
+:root{
+    --brand-color-orange:rgb(243, 79, 14);
+    --brand-color-orange-light:rgb(248, 145, 110);
+    --brand-color-white:rgb(252, 247, 247);
+}
+
 *{
-    margin:0;
-    padding:0;
+    font-family:poppins;
+}
+
+
+/* utility class from the root colors */
+/* cs-> custom */
+.bg-cs-orange{
+    background:var(--brand-color-orange);
+}
+
+.bg-cs-orange-light{
+    background:var(--brand-color-orange-light);
+}
+.bg-cs-white{
+    background:var(--brand-color-white);
+}
+
+.text-cs-orange{
+    color:var(--brand-color-orange);
+}
+.text-cs-white{
+    color:var(--brand-color-white);
+}
+
+
+/* hero logo styling */
+
+.hero-logo-1{
+    transform: scale(0.9);
+}
+
+/* custom styles for the navbar */
+.fixed-navbar{
+    position: fixed;
+}
+
+
+/* dropdown items styling */
+
+.dropdown-item:hover{
+    background:var(--brand-color-orange);
+    color:white;
 }
