@@ -1,0 +1,62 @@
+/* Editable */
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2)); }
+  
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i)); }
+  
+  @keyframes waviy {
+    0%, 40%, 100% {
+      transform: translateY(0); }
+    20% {
+      transform: translateY(-20px); } }
+  
+  #preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: #fff; 
+  }
+  .waviy span{
+      color: rgb(242 16 102);
+  }
+  
+  /* Styles to customise nav bar*/
+  ::-webkit-scrollbar {
+      width: 8px;
+      border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background:none !important;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #fd4520;
+      border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgb(50, 80, 255);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background:rgba(255, 51, 51, 0.925)
+  }
+  
+  a {
+      text-decoration: none;
+      font-size: 20px;
+  }
+  
+  /* End of styles for the navbar*/
