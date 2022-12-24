@@ -1,15 +1,9 @@
-// SCRIPT FOR LOADER
-var myVar;
+//check if the page is loaded and remove the loader!
+$(document).ready(($)=>{
 
-function myFunction() {
-    myVar = setTimeout(showPage, 2000);
-}
+    $.noConflict();
 
-function showPage() {
-    document.getElementById("loader").style.display = "none";
-
-}
-
-window.addEventListener("load",()=>{
-    console.log("page has loaded");
+    $(window).on("load",()=>{
+        $("#loader").css({"display":"none"});
+    })
 })
