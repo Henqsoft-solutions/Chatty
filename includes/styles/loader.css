@@ -1,0 +1,30 @@
+
+#loader {
+    align-items: center;
+    background: #fff;
+    color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    z-index: 9999;
+    opacity: 1;
+    transform: opacity 1s linear;
+    }
+
+    
+    
+    .content img{
+    width: 20%;
+    }
+    
+    .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% auto;
+    }
