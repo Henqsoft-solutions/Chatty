@@ -17,6 +17,3 @@ Add your own favourite sticker, gifs and even put them up for free or monetize i
 
 ## Chatty.... Chatty ... Chatty, let's get chatty.
 
-This project is created by Henry Fasakin, Adedoyin Emmanuel and kachi Luiz under the company Henqsoft solutions
-Stay tuned.
-Rights reserved 2022.
