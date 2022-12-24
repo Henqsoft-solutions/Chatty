@@ -1,16 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 /* define the font family for the application */
 
 @font-face {
     font-family: poppins;
-    src: url(../../fonts/);
+    src: url(../../fonts/poppins.ttf);
 }
+
+/* define the font family for the bold texts */
+
+@font-face {
+    font-family: poppins;
+    src: url(../../fonts/poppins_bold.ttf);
+    font-weight:bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
 
 .into{
     width: 100vw;

@@ -7,5 +7,9 @@ function myFunction() {
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+
 }
+
+window.addEventListener("load",()=>{
+    console.log("page has loaded");
+})
