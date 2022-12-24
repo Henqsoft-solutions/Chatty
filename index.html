@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="chatty"/>
+    <meta name="keyword" content="A sticker hub to get your favourite stickers, gifs, reels, vidoes, audios and anything trending"/>
+    <meta name="keyword" content="Chatty, a sticker hub, chatty, biggest stickerhub, next big thing"/>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <script src="lib/bootstrap.min.js"></script>
     <link rel="stylesheet" href="includes/styles/loader.css">
     <link rel="stylesheet" href="includes/styles/customStyles.css">
     <script src="lib/jquery.js"></script>
     <title>chatty - a chat asset hub</title>
 </head>
 <body >
-    <!-- PRELOADER STARTS-->
+    <!-- Chatty Loader-->
 
     <div class="preloader" id="loader">
         <div style="display:none;" id="myDiv"  class="animate-bottom"></div>
@@ -21,72 +23,121 @@
         </div>
     </div>
 
-    <!--PRELODER ENDS  -->
+    <!-- Chatty Loader ends  -->
 
-    <div class="nav-field">
-       
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="" style="width: 200px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="#">Gif</a>
-                <a class="nav-item nav-link active" href="#">Meme</a>
-                <a class="nav-item nav-link disabled  active" href="#">Reels</a>
-              </div>
-            </div>
+       <!-- chatty navbar -->
+       <nav class="container-fluid navbar navbar-expand-md navbar-light bg-light fixed-navbar" aria-label="Chatty" >
+        <div class="container-fluid"  >
+          <a class="navbar-brand fs-3 px-md-3 px-0 fw-bold" href="#" style="color:var(--brand-color-orange)">Chatty</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Chatty" aria-controls="Chatty" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  d-md-flex justify-content-md-end "  id="Chatty">
+    
+            <div>
+               <ul class="navbar-nav mx-5 d-flex">
+                  <li class="nav-item dropdown mx-md-4">
+                      <a class="nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                   
+                  </li>
+    
+    
+    
+                   <li class="nav-item dropdown mx-md-4">
+                        <a class="nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                
+                   </li>
+    
+    
+                  <li class="nav-item dropdown mx-md-4">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">App</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item text-capitalize" href="#">Chatty Gifs</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="#">Chatty Stickers</a></li>
+                          <li><a class="dropdown-item text-capitalize" href="#">Chatty Reels</a></li>
+                        </ul>
+                  </li>
+    
+                  
+                 <li class="nav-item dropdown mx-md-4">
+                    <a class="nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+            
+               </li>
 
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#" ><i class="fa-solid fa-user" ></i></a>
-              </div>
+    
+          </ul>
+    
+          </div>
+          </div>
+    
         </div>
-          </nav>
-      
-    </div>
+    
+      </nav>
 
-    <!-- intro SECTION STARTS-->
+      <!-- end of navbar -->
 
-<div class="into">
-    <div class="container grid ">
-        <div class="hero-content">
-            <h2 class="my-3">Home of Trending Gif and Stickers</h2>
-            <h3 class="my-3">a chat asset hub with alot of offers</h3>
-            <p>get acess to trending stickers,videos,reels or gifs</p>
-            <div class="intro-btn">
-                <button class="btn my-3">Have Fun Exploring <img src="assets/arrow-right.png" alt="" style="width: 40px;"></button>
-            </div>
-        </div>
+      <!-- hero section -->
 
-        <div class="sticker-img">
-            <img src="assets/side.png" alt="" style="width: 90%;">
-        </div>
+
+<div class="container-fluid col-xl-12 col-xxl-8 px-2 py-5" style="overflow-x:hidden">
+<div class="row align-items-center g-lg-5 g-md-3 py-5 justify-content-around">
+
+  <div class="col-md-6 col-sm-8 col  mx-auto col-lg-4  d-flex align-items-center m-auto my-md-3 my-4" id="img-container">
+
+      <!--<img src="assets/chatty_2.png" class="img-fluid m-auto hero-logo01" >-->
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+ viewBox="0 0 189.473 189.473" xml:space="preserve" class="m-auto" fill="var(--brand-color-orange)">
+<g>
+<path d="M152.531,179.476c-1.48,0-2.95-0.438-4.211-1.293l-47.641-32.316l-25.552,18.386c-2.004,1.441-4.587,1.804-6.914,0.972
+    c-2.324-0.834-4.089-2.759-4.719-5.146l-12.83-48.622L4.821,93.928c-2.886-1.104-4.8-3.865-4.821-6.955
+    c-0.021-3.09,1.855-5.877,4.727-7.02l174.312-69.36c0.791-0.336,1.628-0.53,2.472-0.582c0.302-0.018,0.605-0.018,0.906-0.001
+    c1.748,0.104,3.465,0.816,4.805,2.13c0.139,0.136,0.271,0.275,0.396,0.42c1.11,1.268,1.72,2.814,1.835,4.389
+    c0.028,0.396,0.026,0.797-0.009,1.198c-0.024,0.286-0.065,0.571-0.123,0.854L159.898,173.38c-0.473,2.48-2.161,4.556-4.493,5.523
+    C154.48,179.287,153.503,179.476,152.531,179.476z M104.862,130.579l42.437,28.785L170.193,39.24l-82.687,79.566l17.156,11.638
+    C104.731,130.487,104.797,130.533,104.862,130.579z M69.535,124.178l5.682,21.53l12.242-8.809l-16.03-10.874
+    C70.684,125.521,70.046,124.893,69.535,124.178z M28.136,86.782l31.478,12.035c2.255,0.862,3.957,2.758,4.573,5.092l3.992,15.129
+    c0.183-1.745,0.974-3.387,2.259-4.624L149.227,38.6L28.136,86.782z"/>
+
+</svg>
+
+  </div>
+
+
+  <div class="col-lg-8 text-center text-lg-start my-md-3">
+    <h1 class="display-6 fw-bold lh-1 mb-3 text-capitalize text-start text-md-center text-lg-start px-2 px-md-0 py-1 hero-text-1">Chatty! home of trending gif & stickers</h1>
+    <p class="col-lg-10 fs-5 p-2 text-start text-lg-start">
+        Chatty is a chat assey hub where you can get tons of chat assets like
         
-    </div>
+        You can also get trending stickers, videos or gifs, also you join the community
+        </p>
+
+      <button class="btn btn-white btn-lg text-capitalize mx-md-2 get-started" style="border:1px solid var(--brand-color-orange)">Get Started!</button>
+
+  </div>
+
+
 </div>
 
 
+</div>
 
 
-    <!-- intro SECTION ENDS -->
+<!-- second hero -->
+<div class="container-fluid bg-light m-auto p-5 m-5 hero-2" >
+<br/>
+<h4 class="text-capitalize text-start text-md-center fs-5 py-md-3 py-2 " style="font-weight: bold;"><span class="fs-4 text-cs-orange">Chatty</span> what do we offer? </h4> 
 
 
+<section class=" text-md-center ">
+  
+ Chatty, is a sticker hub, we offer tons of trending gifs, stickers, reels, videos, audios, just anything....
+</section>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+</div>
 
 
 

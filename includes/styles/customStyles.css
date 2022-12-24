@@ -1,39 +1,80 @@
 
-/* define the font family for the application */
-
+/* define the styles for Chatty */
 @font-face {
-    font-family: poppins;
+    font-family: Poppins;
     src: url(../../fonts/poppins.ttf);
 }
 
-/* define the font family for the bold texts */
-
+/* font family for bold text */
 @font-face {
-    font-family: poppins;
+    font-family: Poppins;
     src: url(../../fonts/poppins_bold.ttf);
     font-weight:bold;
 }
 
+
+:root{
+    --brand-color-orange:rgb(243, 79, 14);
+    --brand-color-orange-light:rgb(248, 145, 110);
+    --brand-color-white:rgb(252, 247, 247);
+}
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins;
+    font-family:poppins;
 }
 
 
-.into{
-    width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke;
-
+/* utility class from the root colors */
+/* cs-> custom */
+.bg-cs-orange{
+    background:var(--brand-color-orange);
 }
 
-.intro-btn button{
-    padding: 10px 19px;
-    border: none;
-    border-radius: 20px;
-    background-color: orangered;
+.bg-cs-orange-light{
+    background:var(--brand-color-orange-light);
+}
+.bg-cs-white{
+    background:var(--brand-color-white);
+}
+
+.text-cs-orange{
+    color:var(--brand-color-orange);
+}
+.text-orange{
+    color:var(--brand-color-orange);
+}
+.text-cs-white{
+    color:var(--brand-color-white);
+}
+
+
+/* hero logo styling */
+
+.hero-logo-1{
+    transform: scale(0.9);
+}
+
+
+/* custom styles for the navbar */
+.fixed-navbar{
+    position: fixed;
+}
+
+
+/* dropdown items styling */
+
+.dropdown-item:hover{
+    background:var(--brand-color-orange);
+    color:white;
+}
+
+/* get started button styling */
+.get-started{
+    transition:.4s;
+}
+.get-started:hover{
+    background:var(--brand-color-orange);
+    color:var(--brand-color-white);
 }
 
 
