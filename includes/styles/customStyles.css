@@ -77,4 +77,17 @@
     color:var(--brand-color-white);
 }
 
+#navbar{
+    z-index: 100;
+}
+
+/* .arrow-right{
+    transform: scale(0.2) translate(-40px,50px);
+    height:30px;
+    width:60px;
+    display: block;
+    padding:0;
+} */
+
+
 
