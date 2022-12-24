@@ -69,25 +69,19 @@
 }
 
 /* get started button styling */
-.get-started{
-    transition:.4s;
-}
 .get-started:hover{
+   background:var(--brand-color-white);
+   cursor:pointer;
+}
+.get-started{
     background:var(--brand-color-orange);
     color:var(--brand-color-white);
+    transition:.6s;
 }
 
 #navbar{
     z-index: 100;
 }
-
-/* .arrow-right{
-    transform: scale(0.2) translate(-40px,50px);
-    height:30px;
-    width:60px;
-    display: block;
-    padding:0;
-} */
 
 
 
