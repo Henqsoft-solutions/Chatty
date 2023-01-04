@@ -109,6 +109,7 @@ main {
 .homepage .absolute-img img{
     position: absolute;
     z-index: -1;
+    cursor: pointer;
 }
 
 .homepage .absolute-img img:nth-child(1) {
@@ -145,17 +146,41 @@ main {
 }
 
 .homepage .container .intro h1 {
+    display: flex;
+    flex-direction: row-reverse;
     font-size: 40px;
     font-weight: bold;
     /* font-family: roboto; */
 }
 
-.homepage .container .intro h1 span {
+.homepage .container .intro h1 .emphasis {
     color: var(--brand-color-orange);
 }
 
+.homepage .container .intro h1 .cursor {
+    display: inline-block;
+    width: 3px;
+    margin-left: -5px;
+    background: var(--brand-color-orange);
+    animation: blink 1s infinite;
+}
+
+/* .homepage .container .intro h1 .cursor.typing {
+    animation: none;
+} */
+
+/* Implement the blink effect of the cursor */
+
+@keyframes blink {
+    0% { background: var(--brand-color-orange);}
+    49% { background: var(--brand-color-orange);}
+    50% { background: transparent;}
+    99% { background: transparent;}
+    100% { background: var(--brand-color-orange);}
+}
+
 .homepage .container div.intro p {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .homepage .container div.intro .btn-container {
