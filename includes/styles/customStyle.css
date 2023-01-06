@@ -146,11 +146,8 @@ main {
 }
 
 .homepage .container .intro h1 {
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
     font-size: 40px;
     font-weight: bold;
-    /* font-family: roboto; */
     transition: var(--trans);
     position: relative;
     animation-name: heading;
@@ -203,6 +200,11 @@ main {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {left : -1000px}
+    100% {left : 0px}
 }
 
 .homepage .container div.intro .btn-container {
@@ -283,6 +285,16 @@ main {
     background: var(--brand-color-orange);
     color: var(--brand-color-white);
     transition: var(--trans);
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    0% { opacity: 0}
+    100% { opacity: 1}
 }
 
 .btn:hover {
