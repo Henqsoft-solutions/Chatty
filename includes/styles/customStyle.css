@@ -18,7 +18,7 @@
 }
 
 
-:root{
+:root {
     --brand-color-orange:rgb(243, 79, 14);
     --brand-color-orange-light:rgb(248, 145, 110);
     --brand-color-white:rgb(252, 247, 247);
@@ -27,7 +27,7 @@
     --trans: 300ms ease-in-out;
 }
 
-*{
+* {
     /* font-family: roboto, sans-serif; */
     margin: 0;
     padding: 0;
@@ -146,11 +146,27 @@ main {
 }
 
 .homepage .container .intro h1 {
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
     font-size: 40px;
     font-weight: bold;
     /* font-family: roboto; */
+    transition: var(--trans);
+    position: relative;
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes heading {
+    0% { transform: translateY(0px)}
+    20% { transform: translateY(-10px)}
+    40% { transform: translateY(-20px)}
+    60% { transform: translateY(-30px)}
+    80% { transform: translateY(-20px)}
+    80% { transform: translateY(-10px)}
+    100% { transform: translateY(0px)}
 }
 
 .homepage .container .intro h1 .emphasis {
@@ -160,7 +176,7 @@ main {
 .homepage .container .intro h1 .cursor {
     display: inline-block;
     width: 3px;
-    margin-left: -5px;
+    margin-left: 0.2rem;
     background: var(--brand-color-orange);
     animation: blink 1s infinite;
 }
@@ -181,6 +197,12 @@ main {
 
 .homepage .container div.intro p {
     font-size: 15px;
+    position: relative;
+    transition: var(--trans);
+    animation-name: content;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .homepage .container div.intro .btn-container {
