@@ -34,6 +34,10 @@
     line-height: 1.5;
 }
 
+i {
+    margin-right: 10px;
+}
+
 body {
     color: #000000;
     background: var(--bg-color);
@@ -65,7 +69,13 @@ main {
     font-weight: bold;
     transition: var(--trans);
     cursor: pointer;
+    display: flex;
+    padding: 5px;
     color: var(--brand-color-orange);
+}
+
+.navbar .logo img {
+    height: 40px;
 }
 
 .navbar .logo:hover {
@@ -206,18 +216,89 @@ main {
     100% {left : 0px}
 }
 
-.homepage .container div.intro .btn-container {
+.btn-container {
     margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 
-.homepage .container div.intro .btn-container .btn:nth-child(2) {
+.btn-container .btn:nth-child(2) {
     background: var(--brand-color-black);
 }
 
-.homepage .container div.intro .btn-container .btn:nth-child(2):hover {
+.btn-container .btn:nth-child(2):hover {
     background: var(--brand-color-orange);
+}
+
+.sponsor {
+    background: var(--brand-color-black);
+    padding: 20px;
+}
+
+.sponsor .container {
+    display: flex;
+    color: var(--brand-color-white);
+    font-size: 2.8rem;
+    font-family: roboto, sans-serif;
+}
+
+.sponsor .container div:not(:last-child) {
+    padding-right: 20px;
+}
+
+.resources {
+    padding: 50px;
+    background: white;
+}
+
+.resources .container {
+    display: flex;
+    background: white;
+}
+
+.resources .container .left {
+    margin-top: 80px;
+}
+
+.resources .container .left .btn-container {
+    justify-content: left;
+}
+
+.resources .container .left .asset-list {
+    margin-top: 50px;
+}
+
+.resources .container .left .asset-list ul {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resources .container .left .asset-list ul li {
+    padding: 10px;
+}
+
+.resources .container .right img {
+    height: 350px;
+    width: 700px;
+}
+
+.search-home {
+    background: rgb(240, 240, 240);
+    padding-top: 10px;
+}
+
+.search-home .container {
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-home .container p {
+    width: 800px;
+    margin: 30px;
 }
 
 
@@ -364,7 +445,7 @@ li {
   
   /* Styles to customise nav bar*/
   ::-webkit-scrollbar {
-      width: 8px;
+      width: 3px;
       border-radius: 10px;
   }
   ::-webkit-scrollbar-track {
