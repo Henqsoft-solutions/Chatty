@@ -294,11 +294,37 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
+}
+
+.search-home .container .searchbar {
+    padding: 20px 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex: 20% 80%;
+    background: var(--brand-color-white);
+    border-radius: 40px;
+}
+
+.search-home .container .searchbar input {
+    width: 100%;
+    background: var(--brand-color-white);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: manrope, sans-serif;
+    outline: none;
 }
 
 .search-home .container p {
-    width: 800px;
+    width: 850px;
     margin: 30px;
+}
+
+footer {
+    background: black;
+    color: var(--brand-color-white);
 }
 
 
