@@ -43,6 +43,8 @@ body {
     background: var(--bg-color);
     font-size: 16px;
     font-family: poppins, sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 main {
@@ -52,8 +54,6 @@ main {
 }
 
 .navbar {
-    /* background: var(--brand-color-orange);
-    color: var(--brand-color-white); */
     height: 60px;
 }
 
@@ -305,6 +305,7 @@ main {
     flex: 20% 80%;
     background: var(--brand-color-white);
     border-radius: 40px;
+    border: 1px solid var(--brand-color-black);
 }
 
 .search-home .container .searchbar input {
@@ -313,13 +314,72 @@ main {
     border: none;
     font-size: 1rem;
     font-weight: bold;
-    font-family: manrope, sans-serif;
+    font-family: roboto, sans-serif;
     outline: none;
 }
 
 .search-home .container p {
     width: 850px;
     margin: 30px;
+}
+
+.search-home .container .asset-card-container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.search-home .container .asset-card {
+    height: 100px;
+    width: 100px;
+    background: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px var(--brand-color-orange);
+}
+
+.search-home .container .asset-card-last {
+    /* height: 100px; */
+    width: 100px;
+    background: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px var(--brand-color-orange);
+}
+
+.search-home .container .asset-card-last .top {
+    background: white;
+    border-radius: 10px 10px 10px 0;
+    padding: 15px;
+}
+
+.search-home .container .top .fa-solid {
+    margin-left: 10px !important;
+}
+
+.search-home .container .asset-card .top {
+    background: var(--brand-color-orange-light);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 10px 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-home .container .asset-card .bottom {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+}
+
+.search-home .container .asset-card-last .bottom {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+    word-wrap: break-word;
 }
 
 footer {
