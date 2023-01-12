@@ -1,3 +1,11 @@
 main {
     dislay: flex;
 }
+
+form {
+    /* display: block; */
+}
+
+.left img {
+    height: 400px;
+}
