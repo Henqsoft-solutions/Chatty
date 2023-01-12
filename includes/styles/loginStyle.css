@@ -32,8 +32,23 @@ main .container {
     height: 300px;
 }
 
+.left p {
+    font-size: 0.9rem;
+}
+
 .right form{
     padding: 5px;
+    text-align: center;
+}
+
+hr {
+    align-self: center;
+    border: none;
+    height: 2px;
+    background: var(--brand-color-black);
+    width: 100%;
+    margin: 10px 50%;
+    transform: translateX(-50%);
 }
 
 .right form input {
@@ -71,6 +86,10 @@ main .container {
     color: white;
     font-weight: bold;
     border: 2px solid var(--brand-color-orange);
+}
+
+.btn-container button a {
+    font-size: 0.8rem;
 }
 
 .btn-container button:hover {

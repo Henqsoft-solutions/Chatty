@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 40px);
+}
+
+.container .right {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.container .right img {
+    width: 200px;
+    height: 300px;
+}
+
+.container .right img:nth-of-type(even) {
+    margin-left: 150px;
+    width: 250px;
+    height: 350px;
+    background: 2px solid black;
+}
