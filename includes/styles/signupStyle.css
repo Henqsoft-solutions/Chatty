@@ -1,13 +1,114 @@
+body {
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 40px);
+    max-width: 1250px;
+    padding: 0 60px;
+}
+
+header {
+    background: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header .container {
+    padding: 30px 50px;
+    margin: 0 auto;
+    min-width: 1250px;
+    height: 40px;
+}
+
+header .logo {
+    display: flex;
+    font-weight: bold;
+}
+
+header .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+header .close-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: manrope, sans-serif;
+    cursor: pointer;
+}
+
+header .close-btn:hover {
+    color: var(--brand-color-orange);
+    cursor: pointer;
+    animation: drop 1s 1;
+}
+
+.container .left {
+    flex: 1;
+}
+
+.container .left form{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.container .left form .inputs-box {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+h1 span {
+    color: var(--brand-color-orange);
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+
+.btn-container {
+    justify-content: start;
+}
+
+.container .left form .inputs-box .inputs {
+    background: rgb(240, 230, 230);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+}
+
+.container .left form .inputs-box .inputs input {
+    width: calc(100% - 2rem);
+    background: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+    color: var(--brand-color-black);
+    outline: none;
+    border: none;
 }
 
 .container .right {
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    flex: 1;
+    /* border: 2px solid rgb(240, 200, 200); */
 }
 
 .container .right img {
@@ -20,4 +121,13 @@
     width: 250px;
     height: 350px;
     background: 2px solid black;
+}
+
+.btn-container button a {
+    font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    border-radius: 10px;
 }
